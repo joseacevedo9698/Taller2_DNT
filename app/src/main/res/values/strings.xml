@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Taller2</string>
+
+    <string-array name="spinner_items">
+
+        <item>Leticia</item>
+        <item>Medellín</item>
+        <item>Arauca</item>
+        <item>Barranquilla</item>
+        <item>Cartagena</item>
+        <item>Tunja</item>
+        <item>Manizales</item>
+        <item>Florencia</item>
+        <item>Yopal</item>
+        <item>Popayán</item>
+        <item>Valledupar</item>
+        <item>Quibdó</item>
+        <item>Montería</item>
+        <item>Bogotá</item>
+        <item>Puerto Inírida</item>
+        <item>San José del Guaviare</item>
+        <item>Neiva</item>
+        <item>Riohacha</item>
+        <item>Santa Marta</item>
+        <item>Villavicencio</item>
+        <item>Pasto</item>
+        <item>Cúcuta</item>
+        <item>Mocoa</item>
+        <item>Armenia</item>
+        <item>Pereira</item>
+        <item>San Andrés</item>
+        <item>Bucaramanga</item>
+        <item>Sincelejo</item>
+        <item>Ibagué</item>
+        <item>Cali</item>
+        <item>Mitú</item>
+        <item>Puerto Carreño</item>
+
+
+    </string-array>
+    <string name="registro">Registro de equipos</string>
+    <string name="nombre">Digite nombre del equipo</string>
+    <string name="director">Digite nombre del director tecnico</string>
+    <string name="ciudad">Ciudad:</string>
+    <string name="campeonatosganados">Campeonatos ganados:</string>
+    <string name="numero">Seleccione un numero</string>
+
+    <string name="guardar">Guardar</string>
+    <string name="listar">Listar</string>
+    <string name="cerrar">Cerrar</string>
+
+    <string name="aux1">Director:</string>
+    <string name="aux2">Campeonatos:</string>
+    <string name="aux3">Ciudad:</string>
+
+</resources>

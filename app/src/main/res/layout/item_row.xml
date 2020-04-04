@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtnombre"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtdirector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:text="@string/aux1"
+
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:text="@string/aux2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:text="@string/aux3"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtdirector"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginRight="39dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+
+            <TextView
+                android:id="@+id/txtciudad"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtcampeonatos"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="150dp"
+                android:layout_marginRight="150dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

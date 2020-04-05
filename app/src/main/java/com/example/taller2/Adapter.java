@@ -33,19 +33,20 @@ public class Adapter extends  ArrayAdapter<Equipo> {
         String director=getItem( position ).getDirector();
         String  ciudad=getItem( position ).getCiudad();
         int campeonatos=getItem( position ).getCampeonatos();
+        String campeon = String.valueOf(campeonatos);
 
         if (view == null)
             view = LayoutInflater.from(context).inflate(resourceLayout,null);
 
-        TextView txtnombre= (TextView)convertView.findViewById(R.id.txtnombre);
-        TextView txtdirector=(TextView)convertView.findViewById(R.id.txtdirector);
-        TextView txtciudad=(TextView)convertView.findViewById(R.id.txtciudad);
-        TextView txtcampeonatos=(TextView)convertView.findViewById( R.id.txtcampeonatos);
+        TextView txtnombre= (TextView)view.findViewById(R.id.txtnombre);
+        TextView txtdirector=(TextView)view.findViewById(R.id.txtdirector);
+        TextView txtciudad=(TextView)view.findViewById(R.id.txtciudad);
+        TextView txtcampeonatos=(TextView)view.findViewById(R.id.txtcampeonatos);
 
         txtnombre.setText(nombre);
         txtdirector.setText(director);
         txtciudad.setText(ciudad);
-        txtcampeonatos.setText(campeonatos);
+        txtcampeonatos.setText(campeon);
 
 
         return view;

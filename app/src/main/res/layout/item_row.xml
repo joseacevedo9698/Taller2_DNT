@@ -46,7 +46,7 @@
                 android:layout_height="20dp"
                 android:layout_marginStart="17dp"
                 android:layout_marginLeft="17dp"
-                android:text="@string/aux2"
+                android:text="@string/aux3"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
 
@@ -58,7 +58,7 @@
                 android:layout_height="20dp"
                 android:layout_marginStart="17dp"
                 android:layout_marginLeft="17dp"
-                android:text="@string/aux3"
+                android:text="@string/aux2"
                 app:layout_constraintStart_toStartOf="parent"
 
                 />

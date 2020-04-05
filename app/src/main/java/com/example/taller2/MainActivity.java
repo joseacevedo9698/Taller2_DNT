@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     Spinner spinner_ciudad;
     Button btnGuardar, btnListar, btnCancelar;
     NumberPicker numberPicker;
-
+    Equipo aux;
     ArrayList<Equipo> equipo;
 
 
@@ -45,29 +45,27 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         director=(EditText)findViewById((R.id.director));
         spinner_ciudad=(Spinner) findViewById((R.id.spinner_ciudad));
 
+        equipo = new ArrayList<>();
         btnGuardar=(Button)findViewById((R.id.btnGuardar));
         btnListar=(Button)findViewById((R.id.btnListar));
         btnCancelar=(Button)findViewById((R.id.btnCancelar));
 
 
-        final Intent intent = new Intent(MainActivity.this,SecundaryActivity.class);
+
 
 
         btnGuardar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 if(validar()){
-                    Equipo aux;
+                    Toast.makeText(MainActivity.this, "Se guardo correctamente", Toast.LENGTH_SHORT).show();
+
                     aux = new Equipo();
                     aux.setNombre( nombre.getText().toString() );
                     aux.setDirector( director.getText().toString() );
                     aux.setCiudad( spinner_ciudad.getSelectedItem().toString() );
                     aux.setCampeonatos( numberPicker.getValue() );
-                    Toast.makeText(MainActivity.this, "Se guardo correctamente", Toast.LENGTH_SHORT).show();
                     equipo.add(aux);
-
-
-
 
                 }
             }
@@ -76,7 +74,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         btnListar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                final Intent intent = new Intent(MainActivity.this,SecundaryActivity.class);
+                intent.putExtra("nombre",nombre.getText().toString());
                 intent.putExtra("lista",equipo);
+                intent.putExtra("equipo",aux);
                 startActivity(intent);
             }
         });
@@ -85,9 +86,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             @Override
             public void onClick(View v){
 
-                intent.addCategory(intent.CATEGORY_HOME);
+                /*intent.addCategory(intent.CATEGORY_HOME);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
+                startActivity(intent);*/
             }
         });
 
